@@ -42,7 +42,7 @@ class BooksController extends Controller
 
     //Show Edit form
     public function edit(Book $book) {
-        return inertia('Book/Edit', ['books' => $book]);
+        return inertia('Book/Edit', ['books' => $book, 'isUpdating' => true]);
     }
 
     //Update Book Data

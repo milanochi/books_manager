@@ -45,7 +45,9 @@ defineProps({
         </section>
         <main class="grid grid-cols-1 md:grid-cols-2 gap-2 px-4">
             <template v-for="book in books" :key="book.id">
-                <div
+                <Link
+                    :href="`/books/${book.id}/edit`"
+                    as="button"
                     class="flex flex-col items-center bg-gray-50 border border-gray-200 p-10 rounded max-w-lg mt-6"
                 >
                     <div>
@@ -61,7 +63,7 @@ defineProps({
                             Released: {{ book.published_year }}
                         </code>
                     </div>
-                </div>
+                </Link>
             </template>
         </main>
         <div v-if="books.length == 0" class="text-red-400 p-8">

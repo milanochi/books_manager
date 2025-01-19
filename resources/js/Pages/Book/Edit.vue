@@ -6,6 +6,10 @@ import { onMounted, reactive, ref } from "vue";
 
 const props = defineProps({
     books: Object,
+    isUpdating: {
+        type: Boolean,
+        default: false,
+    },
 });
 
 const formData = useForm({
@@ -33,7 +37,9 @@ onMounted(() => {
     <Layout>
         <Card>
             <header class="text-center">
-                <h2 class="text-2xl font-bold uppercase mb-1">Edit Gig</h2>
+                <h2 class="text-2xl font-bold uppercase mb-1">
+                    Edit Book Details
+                </h2>
                 <p class="mb-4">Edit: {{ props.books.title }}</p>
             </header>
             <form

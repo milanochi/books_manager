@@ -34,16 +34,16 @@ defineProps({
                             <Link
                                 href="/books/manage"
                                 as="button"
-                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded uppercase"
+                                class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                             >
-                                Manage Books
+                                MANAGE BOOKS
                             </Link>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <main class="grid grid-cols-1 md:grid-cols-2 gap-2 px-4">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-2 px-4 mb-6">
             <template v-for="book in books" :key="book.id">
                 <Link
                     :href="`/books/${book.id}/edit`"
@@ -68,10 +68,6 @@ defineProps({
         </main>
         <div v-if="books.length == 0" class="text-red-400 p-8">
             No Books Found!
-        </div>
-
-        <div class="mt-6 p-4">
-            {{ books.links }}
         </div>
     </Layout>
 </template>

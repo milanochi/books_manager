@@ -57,8 +57,6 @@ Other Configurations:
 
 Adjust other configurations as needed, such as:
 APP_URL: The URL of your application (e.g., 'http://localhost')
-SESSION_DRIVER: The session driver to use (e.g., 'file', 'database', 'redis')
-6. Generate an Application Key
 
 Bash
 
@@ -78,7 +76,7 @@ Start the built-in development server:
 
 Bash
 npm install
-npm run dev - for hot module reload with vite
+npm run dev  //for hot module reload with vite
 
 php artisan serve
 This will typically start the server on http://127.0.0.1:8000.

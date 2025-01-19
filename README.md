@@ -1,3 +1,5 @@
+## Instructions on how to set up and run the application locally, including database configuration and environment variables.
+
 Git: Ensure you have Git installed on your system. You can download it from the official Git website.
 Composer: Composer is a dependency manager for PHP. Download and install it according to the instructions on the Composer website.
 PHP: You need a recent and supported version of PHP installed on your machine.

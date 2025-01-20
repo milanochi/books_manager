@@ -13,7 +13,7 @@ class BookControllerTest extends TestCase
     public function test_index_returns_books()
     {
         $books = Book::factory()->count(3)->create(); 
-        $response = $this->get('/books'); 
+        $response = $this->get('/'); 
         $response->assertStatus(200); 
         $response->assertViewHas('books', $books); 
     }

@@ -25,6 +25,7 @@ const handleEditSubmit = () => (props.isUpdating ? updatePost() : addPost());
 const addPost = () => formData.post("/books");
 const updatePost = () => formData.put(`/books/${props.books.id}`);
 
+//Assigns data to make the edit form show data
 onMounted(() => {
     formData.title = props.books.title;
     formData.author = props.books.author;

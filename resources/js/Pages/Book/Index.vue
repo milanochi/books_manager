@@ -58,6 +58,15 @@ defineProps({
                     <div class="block items-center mb-3">
                         <p class="text-md">Author: {{ book.author }}</p>
                     </div>
+                    <div class="block items-center mb-3">
+                        <p class="text-md">
+                            Genre:
+                            <span
+                                class="bg-blue-500 py-1 px-2 text-sm text-white rounded font-semibold"
+                                >{{ book.genre }}</span
+                            >
+                        </p>
+                    </div>
                     <div class="block items-center mb-4">
                         <code class="text-md font-bold">
                             Released: {{ book.published_year }}

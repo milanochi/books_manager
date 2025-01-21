@@ -41,6 +41,16 @@ const handleDelete = (id) => {
                                 <p class="text-md">Author: {{ book.author }}</p>
                             </div>
 
+                            <div class="block items-center mb-3">
+                                <p class="text-md">
+                                    Genre:
+                                    <span
+                                        class="bg-gray-300 py-1 px-2 text-sm text-[#333] rounded font-semibold"
+                                        >{{ book.genre }}</span
+                                    >
+                                </p>
+                            </div>
+
                             <div class="mb-4">
                                 <code class="text-md font-bold">
                                     Released: {{ book.published_year }}
@@ -52,14 +62,14 @@ const handleDelete = (id) => {
                         <Link
                             :href="`/books/${book.id}/edit`"
                             as="button"
-                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded uppercase px-4 py-3"
+                            class="bg-blue-500 hover:bg-blue-700 text-white font-bold rounded uppercase px-4 py-2"
                         >
                             Edit Book
                         </Link>
 
                         <button
                             @click="handleDelete(book.id)"
-                            class="bg-red-500 hover:bg-red-700 text-white font-bold rounded uppercase px-4 py-3"
+                            class="bg-red-500 hover:bg-red-700 text-white font-bold rounded uppercase px-4 py-2"
                         >
                             Delete Book
                         </button>
